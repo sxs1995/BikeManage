@@ -1,7 +1,7 @@
 /*
  * @Author: shenxsh
  * @Date: 2019-05-13 11:48:29
- * @LastEditTime: 2019-05-13 17:35:23
+ * @LastEditTime: 2019-05-14 09:06:40
  * @LastEditors: Do not edit
  * @Description: 框架header部分
  */
@@ -35,7 +35,7 @@ class Header extends Component {
       .Jsonp({
         url:
           "http://api.map.baidu.com/telematics/v3/weather?location=" +
-          city +
+          encodeURIComponent(city) +
           "&output=json&ak=3p49MVra6urFRGOT9s8UBWr2"
       })
       .then((res) => {

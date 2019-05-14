@@ -1,4 +1,8 @@
+@import '../../style/default.less';
+
 .header {
+    background: @colorM;
+
     .header-top {
         height: 60px;
         line-height: 60px;
@@ -14,10 +18,22 @@
         height: 40px;
         line-height: 40px;
         padding: 0 20px;
-        border-top: 1px solid #f9c700;
+        border-top: 1px solid @colorA;
+        position: relative;
 
         .breadcrumb-title {
             text-align: center;
+
+            &:after {
+                content: "";
+                position: absolute;
+                left: 50%;
+                margin-left: -12px;
+                bottom: -8px;
+                border-top: 9px solid @colorM;
+                border-left: 12px solid transparent;
+                border-right: 12px solid transparent;
+            }
         }
 
         .date {

@@ -31,7 +31,7 @@ class NavLeft extends Component {
 
   render() {
     return (
-      <div className="nav-left">
+      <div>
         <div className="logo">
           <img src="/assets/logo-ant.svg" alt="" />
           <div className="title">React Bike</div>
